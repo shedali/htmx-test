@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/htmx.org@1.9.2"
+		integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
+		crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.lds-circle {
+			display: inline-block;
+			transform: translateZ(1px);
+		}
+
+		.lds-circle>div {
+			display: inline-block;
+			width: 64px;
+			height: 64px;
+			margin: 8px;
+			border-radius: 50%;
+			background: #fff;
+			animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+		}
+
+		@keyframes lds-circle {
+
+			0%,
+			100% {
+				animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+			}
+
+			0% {
+				transform: rotateY(0deg);
+			}
+
+			50% {
+				transform: rotateY(1800deg);
+				animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+			}
+
+			100% {
+				transform: rotateY(3600deg);
+			}
+		}
+
+		.red {
+			color: red;
+		}
+
+		.blue {
+			color: blue;
+			transition: all ease-in 1s;
+		}
+	</style>
+</head>
+
+<body>
+
+	<button hx-get="/hello/ben" hx-trigger="click" hx-target="#parent-div" hx-swap="outerHTML">
+		Click Me!
+	</button>
+
+
+	Some news
+	<div hx-get="/news" hx-trigger="every 1s">
+		<div class="red" id="news">the news should appear here</div>
+		<!-- <div class="htmx-indicator lds-circle"><div></div></div> -->
+	</div>
+
+	<div id="parent-div">load content into this</div>
+
+</body>
+
+</html>

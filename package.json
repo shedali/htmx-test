@@ -1,0 +1,20 @@
+{
+  "name": "htmx-test",
+  "version": "1.0.0",
+  "description": "htmx first test",
+  "main": "server.js",
+  "dependencies": {
+    "lru-cache": "^7.18.3",
+    "mime-db": "^1.52.0",
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/inert": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
