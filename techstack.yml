@@ -1,0 +1,93 @@
+repo_name: shedali/htmx-test
+report_id: 5e9d6b84c5ec4329bc09917c367e09a9
+repo_type: Public
+timestamp: '2023-11-09T22:56:38+00:00'
+requested_by: shedali
+provider: github
+branch: master
+detected_tools_count: 7
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: package.json
+  last_updated_by: Franz
+  last_updated_on: 2023-06-28 10:24:08.000000000 Z
+- name: Segment
+  description: A single hub to collect, translate and send your data with the flip
+    of a switch.
+  website_url: https://segment.com/?utm_medium=paid-display&utm_source=stackshare&utm_campaign=analytics
+  open_source: false
+  hosted_saas: true
+  category: Analytics
+  sub_category: Analytics Integrator
+  image_url: https://img.stackshare.io/service/5/default_aa447805966bbb635af0d113e93e1f1030497052.jpg
+  detection_source: package.json
+  last_updated_by: Franz
+  last_updated_on: 2023-06-28 10:24:08.000000000 Z
+- name: "@hapi/hapi"
+  description: HTTP Server framework
+  package_url: https://www.npmjs.com/@hapi/hapi
+  version: 21.3.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18181/default_9472f2a1c56256064874685c48697eac8a870621.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Franz
+  last_updated_on: 2023-06-28 10:24:08.000000000 Z
+- name: lru-cache
+  description: A cache object that deletes the least-recently-used items
+  package_url: https://www.npmjs.com/lru-cache
+  version: 7.18.3
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16386/default_4cc3f31b8c64a6268fc123f0965a09d1b11180af.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Franz
+  last_updated_on: 2023-06-28 10:24:08.000000000 Z
+- name: mime-db
+  description: Media Type Database
+  package_url: https://www.npmjs.com/mime-db
+  version: 1.52.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18701/default_803d9095ae52cd39a90bd905df9c2e4583f75904.png
+  detection_source_url: package-lock.json
+  detection_source: package.json
+  last_updated_by: Franz
+  last_updated_on: 2023-06-28 10:24:08.000000000 Z
